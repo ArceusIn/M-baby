@@ -1,0 +1,134 @@
+* {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+#navbar {
+    position: sticky;
+    background-image: linear-gradient(to right, red, blue, black);
+    display: flex;
+    align-items: center;
+    justify-content: right;
+
+}
+
+#navbar img {
+    width: 65px;
+    padding-right: 12px;
+}
+
+#navbar ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-right: 26px;
+}
+
+#navbar ul :hover {
+    text-decoration: overline;
+    cursor: pointer;
+}
+
+#navbar ul li a {
+    padding: 2px 9px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.25rem;
+}
+
+#navbar .btn {
+    border: 2px solid white;
+    margin-right: -17px;
+    padding: 5px 34px;
+    background-color: blue;
+    color: white;
+    font-size: 1.11rem;
+    border-radius: 20px;
+    margin-left: 35px;
+
+}
+
+#navbar .btn a {
+    color: white;
+    text-decoration: none;
+}
+
+#navbar .btn:hover {
+    opacity: 0.7;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#navbar input {
+    border: 2px solid white;
+    border-radius: 20px;
+    margin-right: 20px;
+    padding: 2.5px 55px;
+    color: black;
+    opacity: 0.9;
+    font-size: 1.1rem;
+}
+
+#navbar .heading {
+    font-size: 1.70rem;
+    padding-right: 200px;
+    text-decoration: underline;
+
+}
+
+
+
+/* section home-2-------------------------------- */
+.home-1 {
+    padding-top: 10%;
+    padding-left: 8%;
+}
+
+.home-1 h1 {
+    font-size: 3.1rem;
+    margin-bottom: -12px;
+    opacity: 0.7;
+}
+
+.home-1 h2 {
+    font-size: 3.1rem;
+    opacity: 0.7;
+
+}
+
+.f2 {
+    padding-top: 10px;
+
+}
+
+.home-1 h5 {
+    font-size: 1.1rem;
+    opacity: 0.7;
+}
+
+.f1 {
+    display: flex;
+
+}
+
+#f13 {
+    padding-top: 10px;
+    opacity: 0.7;
+}
+
+.f1 h3 {
+    padding-right: 80px;
+    padding-top: 10px;
+    font-size: 1.3rem;
+    margin-bottom: -15px;
+    opacity: 0.7;
+}
+
+.f1 h4 {
+
+    padding-top: 10px;
+    font-size: 1.33rem;
+    margin-bottom: -15px;
+    opacity: 0.7;
+}

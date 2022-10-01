@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ/pages.</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    #third-para {
+        display: flex;
+        flex-direction: column;
+        padding-left: 12%;
+        padding-right: 12%;
+    }
+
+    #third-para h5 {
+
+        font-size: 8rem;
+        padding-top: 115px;
+        text-decoration: underline;
+
+    }
+
+    h4 {
+        padding-top: 12px;
+        font-size: 1.30rem;
+        opacity: 0.7;
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+
+    .frist-line {
+        text-align: center;
+        padding-left: 302px;
+        padding-right: 302px;
+    }
+
+    .first-line h1 {
+        padding-bottom: 11px;
+        padding-top: 32px;
+        text-decoration: underline;
+        opacity: 0.73;
+        font-size: 1.9rem;
+        text-align: left;
+        padding-left: 12%;
+    }
+
+    .first-line h2 {
+        font-size: 1.3rem;
+        padding-top: 1px;
+        margin-left: 0px;
+        opacity: 0.60;
+        text-align: left;
+        padding-left: 12%;
+        padding-right: 12%;
+    }
+
+    .first-line img {
+        width: 104%;
+
+    }
+
+    .faq1 {
+        display: flex;
+
+    }
+
+    .faq1 img {
+        padding-left: 50px;
+        width: 22%;
+
+    }
+</style>
+
+<body>
+
+
+    <nav id="navbar">
+        <div id="logo">
+            <img src="/img/shield22.png" alt="ERROR...">
+        </div>
+        <div>
+            <h3 class="heading">Easy File Sharing </h3>
+        </div>
+        <ul>
+
+            <input type="text" placeholder="Search here..">
+            <li class="item"> <a href="index.html">Transfer</a> </li>
+            <li class="item"> <a href="about.html">About </a> </li>
+            <li class="item"> <a href="Blog.html">Blog</a> </li>
+            <li class="item"> <a href="FAQ.html">FAQ</a> </li>
+            <li class="item"> <a href="Privacy.html">Privacy</a> </li>
+            <button class="btn"> <a href="btn1.html"> Buy me a coffee</a></button>
+        </ul>
+
+    </nav>
+
+
+    <section id="third-para">
+        <div class="faq1">
+            <img src="/faq.jfif" alt=" ERROR..">
+            <h5>FAQ</h5>
+        </div>
+
+        <h4>A knowledge base with the most common issues and questions about transferring your files with ToffeeShare,
+            and file sharing in general.</h4>
+
+        <div class="first-line">
+            <img src="/img/pad32.png" alt="">
+            <h1>🚂Why peer to peer?</h1>
+            <h2>
+                Peer to peer communication means the communication flows directly between two devices rather than via an
+                intermediate server. This means your data will not be stored somewhere else before it reaches its
+                destination. ToffeeShare achieves this via WebRTC, a relatively new communication API used in modern
+                browsers. Under the hood of WebRTC is a protocol called STUN.</h2>
+
+
+
+
+
+
+            <h2>As the image above illustrates this also allows for a much higher transfer speed. Simply because you
+                completely skip the whole upload to a server
+                <br>
+                What might be interesting to know is that ToffeeShare initially started out as a native application,
+                running our own proprietary version of the STUN protocol. When we discovered this had also become
+                possible within the browser we decided to focus on that first. We might still launch the native version
+                in the near future, but this is currently not a priority. Feel free to contact us about it, so we can
+                give you a demo.
+            </h2>
+        </div>
+        <div class="first-line">
+            <h1> 🔐Why end to end encryption?</h1>
+            <h2>With basic encryption your data is made incomprehensible to make sure nobody can listen in when you’re
+                connected with a server. This is safe in most cases, but if for whatever reason a server is compromised
+                or or hacked, the privacy of your data is in jeopardy. End to end encryption solves this problem by
+                leaving out the man in the middle. Instead of on the server, encryption will be done directly between
+                the sender and receiver.
+                <br>
+                <br>
+                Nowadays more and more services that take security in mind adopt this idea. The downside is that both
+                parties have to be online at the same time in order to make the required agreement to make end to end
+                encryption possible. And of course there are the services that have other reasons for sticking as man in
+                the middle.
+                <br>
+                <br>
+                There are many different ways of making end to end encryption possible, but ToffeeShare uses the default
+                WebRTC implementation, which currently is DTLS v1.2, an industry standard. The encryption will
+                automatically update when your browser does, so you are always sure to have the latest version running
+                (as long as you keep your browser up-to-date of course).
+            </h2>
+        </div>
+
+        <div class="first-line">
+            <h1> 📁How can I send multiple files with the same link?</h1>
+            <h2>Just select multiple files like you normally would browsing your computer or mobile device. The received
+                will be notified you're trying to send multiple files and can see the total file size.</h2>
+        </div>
+
+        <div class="first-line">
+            <h1>⌛It starts downloading but crashes at 100% (or before)</h1>
+            <h2>Some browsers do not support directly downloading to your download folder. Safari is known to have this
+                issue. As a fallback we have to save the entire file in memory, which may cause some strange and
+                unexpected result when downloading large files (3/4GB+). Sometimes it might crash the browser tab or in
+                very rare cases even the entire web browser(!).
+                <br>
+                <br>
+                That's why we advice you to use either Chrome, Firefox or a modern version of Edge. These browsers allow
+                us to download straight to your computer so don't have this issue.
+            </h2>
+        </div>
+
+        <div class="first-line">
+            <h1>🕰It keeps saying: could not connect to sender</h1>
+            <h2>ToffeeShare requires the sender to be online in order to establish a peer to peer connection. If the
+                sender is offline or has closed the browser tab containing the files, the files are simply no longer
+                available. Please ask the sender if he can send you another link.
+                <br>
+                <br>
+                If the sender still has the browser tab open, but uses a mobile phone, ask them to reopen the web
+                browser with ToffeeShare open. Some mobile browsers will go into hibernation when the phone is put to
+                standby or another app is opened.
+            </h2>
+        </div>
+
+        <div class="first-line">
+            <h1>🎎The progress bar is stuck at 0%</h1>
+            <h2>ToffeeShare has been tested on many different networks, but we can't guarantee that it will work
+                everywhere. If the progress bar is stuck at 0% it usually means a connection cannot be made. When
+                sharing from a mobile phone you could try to switch from a mobile network to WiFi. If it feels like
+                something is not working as it should please send us a message.</h2>
+        </div>
+
+        <div class="first-line">
+            <h1>📚It says 100% but I don't see the file(s)</h1>
+            <h2>To be able to download large files, we start downloading straight to your computer using the built
+                in
+                <br>
+                browser file downloader. This process however sporadically fails to kick in, meaning the file is
+                downloading, but not being saved. What usually helps is to just restart the transfer, you should see
+                a
+                <br>
+                message appear as if you're downloading a general file from a website. If this however keeps
+                happening,
+                please contact us, because it means something else might be wrong.
+            </h2>
+        </div>
+
+        <div class="first-line">
+            <h1>📮What browsers do you support?</h1>
+            <h2>For the best performance we advice you to use either Firefox or Chrome. Here's a list of the most
+                common
+                web browsers and how well ToffeeShare supports them</h2>
+        </div>
+
+        <div class="first-line">
+            <h1>🔔 Internet explorer</h1>
+            <h2>Basically the entire website does not work. Please avoid using this browser, it is a serious
+                security
+                concern.
+                <br>
+                <br>
+                The list will be updated once we start testing on more browsers. To have a peek if ToffeeShare works
+                on
+                other browsers we would like to point to this handy website]. If WebRTC is supported in your browser
+                according to this page it should work. If not, please let us know so we can fix it!
+            </h2>
+        </div>
+    </section>
+</body>
+
+</html>
